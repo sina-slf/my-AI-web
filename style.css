@@ -20,7 +20,16 @@ body {
     font-size: 15px;
     transition: .3s ease;
 }
-
+.btn.ghost {
+    background: transparent;
+    color: #8fa9ce5b;
+    transition: all 2s;
+    font-size: 16.5px;
+    color: black;
+}
+.btn.ghost:hover {
+    background: #2f32e754;
+}
 .btn.primary {
     background: linear-gradient(135deg, #6366F1, #8B5CF6);
     color: white;
@@ -29,16 +38,6 @@ body {
 .btn.primary:hover {
     opacity: .85;
 }
-
-.btn.ghost {
-    background: transparent;
-    color: #334155;
-}
-
-.btn.ghost:hover {
-    color: #6366F1;
-}
-
 .btn.big {
     padding: 11px 26px;
     font-size: 15px;
@@ -55,8 +54,34 @@ body {
     justify-content: space-between;
     background: white;
     box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    /*new things*/
+      .box {
+      background: #111;
+      color: white;
+      padding: 40px 80px;
+      border-radius: 13px;
+      font-size: 20px;
+    }
 }
-
+.navbar-anim {
+    /*new things*/
+      padding-bottom: 3px;
+      background: linear-gradient(
+      90deg,
+      rgb(74, 14, 90),
+      rgb(1, 40, 100),
+      rgb(155, 0, 0)
+      );
+      animation: rgb 5s linear infinite;
+}
+.text-nav {
+    font-size: 17px;
+    text-decoration: none;
+}
+  @keyframes rgb {
+      from { filter: hue-rotate(0deg); }
+      to   { filter: hue-rotate(360deg); }
+    }
 .logo {
     font-size: 22px;
     font-weight: bold;
@@ -98,14 +123,26 @@ body {
     align-items: center;
 }
 .hero-image img {
-    width: 380px;
     border-radius: 26px;
-    box-shadow: 0 40px 90px rgba(0,0,0,.25);
+    position: relative;
+    animation: show 5s forwards;
 }
-
+@keyframes show {
+    0% {
+        transform: rotatey(0deg)scale(0.2);
+    }
+    50% {
+        transform: rotatey(180deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotatey(360deg)scale(1);
+        opacity: 1;
+    }
+}
 /* ================= COLLAB ================= */
 .collab {
-    margin: 120px 0;
+    margin: 0px 0 200px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,6 +175,7 @@ body {
 .info p {
     max-width: 520px;
     font-size: 17px;
+    text-align: center;
     line-height: 1.7;
     color: #334155;
 }
@@ -152,6 +190,7 @@ body {
     background: #0F172A;
     padding: 120px 80px;
     display: flex;
+    text-align: center;
     gap: 40px;
 }
 
@@ -164,7 +203,10 @@ body {
     box-shadow: inset 0 0 0 1px rgba(255,255,255,.08);
     border:  1px solid rgba(193, 193, 193, 0.84);   
 }
-
+.features-text {
+    font-size: 18px;
+    color: #fff;
+}
 /* ================= FINAL ================= */
 .final {
     padding: 140px 80px;
@@ -206,7 +248,7 @@ body {
 
 .auth-modal {
     width: min(420px, 90%);
-    background: white;
+    background: rgb(208, 239, 252);
     border-radius: 28px;
     padding: 34px;
     position: relative;
@@ -220,92 +262,29 @@ body {
     cursor: pointer;
     font-size: 20px;
 }
-.auth-illustration {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.auth-illustration img {
-    max-width: 200px;
-    height: auto;
-}
 
 .auth-body {
     width: 100%;
     max-width: 360px;
-    margin: 0 auto;
+    margin: 20px auto auto auto;
     padding: 24px;
-    background: #ffffff;
+    background:  #ffffffb7;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-family: sans-serif;
 }
 
-.auth-body h2 {
-    margin-bottom: 8px;
-    font-size: 22px;
-    font-weight: 600;
-    color: #333;
-}
-
-.auth-body p {
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #777;
-}
-
-.auth-body input {
-    width: 100%;
-    padding: 12px 14px;
-    margin-bottom: 12px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    font-size: 14px;
-    outline: none;
-    transition: border-color 0.3s;
-}
-
-.auth-body input:focus {
-    border-color: #4f46e5;
-}
-
-.auth-body button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    border: none;
-    border-radius: 10px;
-    background: #4f46e5;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.auth-body button:hover {
-    background: #4338ca;
-}
-
 .auth-footer {
-    display: block;
+    display: flex;
+    align-items: center;
     margin-top: 16px;
     font-size: 13px;
     color: #666;
 }
-
-.auth-footer a {
-    margin-left: 4px;
-    color: #4f46e5;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.auth-footer a:hover {
-    text-decoration: underline;
+.text-ver {
+    font-size: 14px;
+    margin-right: 8px;
 }
 .opinion {
     display: flex;
@@ -328,7 +307,8 @@ body {
     margin: 60px 10px 10px 10px;
     width: 85.5%;
     padding-left: 8px;
-    height: 350px;
+    padding-bottom: 220px;
+    padding-top: 5px;
     border-radius: 12px;
     border: none;
     background-color: #adadad;
@@ -389,7 +369,46 @@ body {
     float: right;
     margin-right: 20%;
 }
-
+button:hover {
+    background: linear-gradient(135deg, #2f32e7, #6b35e8 );
+}
+#verify-sine-in {
+    display: none;
+}
+.Sign-in-123 {
+    display: none;
+    display: flex;
+    height: 350px;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 17px;
+    padding: 5px;
+    justify-content: center;
+    background: #ffffffb7;  
+    box-shadow: 0px 10px 20px rgb(216, 216, 216);
+}
+.in-put {
+    width: 90%;
+    height: 40px;
+    margin: 6px;
+    padding: 4px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.422);
+}
+.img-ver {
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 10px;
+}
+.btn-ver {
+    width: 90%; 
+    background: linear-gradient(135deg, #6366F1, #8B5CF6 );
+    height: 40px;
+    margin: 6px;
+    border-radius: 13px;
+    border: none;
+}
 @keyframes pop {
     from {
         transform: scale(.85);
@@ -432,7 +451,7 @@ body {
         font-size: 12px;
         padding: 7px 15px;
         margin-top: 40px;
-        margin-left: 0;
+        margin-left: 12px;
     }
     .navbar nav {
         gap: 6px;
@@ -457,7 +476,7 @@ body {
     }
     .feature-card {
         width: 330px;
-        padding: 25px;
+        padding: 30px;
     }
     .opinion {
         display: flex;
@@ -469,7 +488,8 @@ body {
         border: none;
     }
     .input-text {
-        height: 170px;
+        padding-top: 5px;
+        padding-bottom: 170px;
     }
     .email-input {
         width: 250px;
