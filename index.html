@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AI-tools</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <input type="checkbox" id="auth-toggle">
 
-<header class="navbar">
+<header class="navbar-anim">
+<div class="navbar">
   <div class="logo">AI-SLF</div>
 
   <nav>
-    <label for="auth-toggle" class="btn primary">Sign up</label>
-    <button class="btn ghost">About</button>
-    <button class="btn ghost">Contact</button>
+    <label for="auth-toggle" class="btn primary" id="btn-nav-sign">Sign up</label>
+    <button class="btn ghost"><a href="AI-abut.html" class="text-nav">about</a></button>
+    <button class="btn ghost"><a href="#" class="text-nav">Contact</a></button>
   </nav>
+</div>
 </header>
 
 <main>
@@ -44,14 +46,14 @@
 
   <!-- Info -->
   <section class="info">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+    <p>the future becomes more beautiful with artificial intelligece...</p>
     <img src="photo_2025-12-03_07-29-40.jpg">
   </section>
 
   <!-- Features -->
   <section class="features">
-    <div class="feature-card">AI Feature</div>
-    <div class="feature-card">Human Feature</div>
+    <div class="feature-card"><a href="#" class="features-text">AI Feature</a></div>
+    <div class="feature-card"><a href="#" class="features-text">Human Feature</a></div>
   </section>
 
   <!-- Final -->
@@ -66,28 +68,51 @@
 <div class="auth-overlay">
   <div class="auth-modal">
     <label for="auth-toggle" class="close">✕</label>
-    <!-- form -->
-     <div class="auth-illustration">
-        <img src="download.webp" alt="verify">
-     </div>
+    <!--form1-->
+      <div id="verify-sign-in">
+                      <img src="download.webp" class="img-ver">
+          <div class="Sign-in-123">
+                      <input type="email" 
+                           placeholder="email" class="in-put">
+                      <input type="password"
+                            placeholder="password" class="in-put">
+                      <input type="password"
+                            placeholder="password" class="in-put">
+                      <button class="btn-ver">verify & continue</button>
+                      <div style="display: flex;margin: 20px;">
+                    <span class="auth-footer">
+                      <h5 class="text-ver">Already have accont?</h5>
+                      <a href="#" id="back-sign-in">have a acccont?!</a>
+                    </span>
+             </div>
+          </div>
+      </div>
+
+    <!-- form2 -->
+    <div id="form-ver">
+
+        <img src="download.webp" alt="verify" class="img-ver">
 
      <div class="auth-body">
         <h2>verify your accont</h2>
         <p>please enter your email and password to continue</p>
 
         <input type="email" 
-    placeholder="email">
+    placeholder="email" class="in-put">
         <input type="password"
-    placeholder="password">
-        <button>verify & continue</button>
+    placeholder="password" class="in-put">
+        <button class="btn-ver">verify & continue</button>
 
         <span class="auth-footer">
-            Already have accont?
-            <a href="#">sine in</a>
+            <h5 class="text-ver">you never sign up?</h5>
+            <a href="#" id="verify-onk">sine up</a>
         </span>
+        </div>
      </div>
   </div>
 </div>
+
+
 <div class="opinion">
     <div class="left-side">
         <input type="text" placeholder="feedback" class="input-text">
@@ -95,17 +120,18 @@
             <input type="email" placeholder="email" class="email-input">
           <button class="send-btn">SEND</button>
         </div>
-      <p class="feed-b-text">Lorem ipsum, dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia velit autem possimus illum. consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, sequi?</p>
+      <p class="feed-b-text">thank you for your comments and criticism.With your help, we can achieve greet things.</p>
   </div>
 
   <div class="informetion">
 
     <div class="div-1-last-screen">
         <img src="OIP (1).webp" alt="photo" class="div-last-screen-ph">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur consequatur nostrum repudiandae, molestiae animi eaque deserunt magnam dolore!</p>
+        <p>You can read the information of our employees and invte them to cooperate through this button</p>
     </div>
         <button class="div-last-screen-btn">Lest Go</button>
-
+  <script src="app.js"></script>
 </div>
 </body>
 </html>
+
