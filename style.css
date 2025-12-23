@@ -422,7 +422,7 @@ button:hover {
 @media (max-width: 765px){
     .logo {
         font-size: 18px;
-        margin-left: 16px;
+        margin-left: 8px;
     }
     .navbar {
         padding: 0 10px;
@@ -444,12 +444,12 @@ button:hover {
     }
     .btn {
         font-size: 12px;
-        padding: 9px 18px;      
+        padding: 9px 12px;      
         margin-right: 10px; 
     }
     .big {
         font-size: 12px;
-        padding: 7px 15px;
+        padding: 7px 18px;
         margin-top: 40px;
         margin-left: 12px;
     }
