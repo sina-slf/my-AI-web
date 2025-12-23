@@ -102,6 +102,15 @@ body {
     box-shadow: inset 6px 3px 10px rgb(194, 155, 232);
     border-radius: 100%;
     transition: all 1.3s;
+    animation: show forwards 4s;
+}
+@keyframes show {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
 }
 .ball-up:hover {
     box-shadow: inset 3px 0 15px blueviolet;
@@ -130,7 +139,10 @@ body {
     height: 36px;
     border-radius: 20px;
     border: none;
-    background: linear-gradient(135deg, rgba(46, 46, 244, 0.201), rgba(137, 43, 226, 0.201));
+    background: linear-gradient(135deg, rgba(46, 46, 244, 0.308), rgba(137, 43, 226, 0.308));
+}
+.back-g-ball button:hover {
+    background: linear-gradient(135deg, rgba(46, 46, 244, 0.598), rgba(137, 43, 226, 0.589));  
 }
 /* ================= side2 ================= */
 .side2 {
@@ -149,12 +161,42 @@ body {
     border-radius: 18px;
     background: linear-gradient(180deg, rgb(152, 152, 152), blueviolet);
     box-shadow: 2px 2px 10px rgb(66, 66, 66);
-    transition: all 4s;
+    transition: all 2s;
 }
 .mio:hover {
     margin-top: -7px;
-    background: linear-gradient(180deg, rgba(143, 143, 143, 0), rgba(137, 43, 226, 0.726));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.884), rgba(137, 43, 226, 0.726));
     height: 320px;
+}
+.mio-aleman {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.photo {
+    margin-top: 5%;
+    width: 70px;
+    height: 70px;
+    background: black;
+    border-radius: 100%;
+}
+.butt-detels {
+    display: flex;
+    margin-top: 30%;
+}
+.mio button {
+    background-color: rgb(211, 187, 233);
+    width: 100px;
+    margin: 4px;
+    font-size: large;
+    border-radius: 15px;
+    height: 35px;
+    border: none;
+}
+.mio button:hover {
+    background: linear-gradient(135deg, rgba(31, 31, 252, 0.92), rgb(143, 35, 244));
 }
 .last-div {
     margin-top: 4%;
@@ -173,7 +215,9 @@ body {
 h4 {
     text-align: center;
     width: 50%;
+    font-size: large;
     padding: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 @media (max-width: 765px) {
     .nav {
@@ -182,7 +226,7 @@ h4 {
         width: 100%;
     }
     .logo-text {
-        width: 10%;
+        width: 2%;
         font-size: 15px;
     }
     .mader3div {
