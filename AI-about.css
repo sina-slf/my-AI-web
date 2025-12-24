@@ -84,11 +84,14 @@ body {
     width: 100%;
     height: 470px;
     display: flex;
+    -webkit-mask-image: 
+    radial-gradient(rgb(46, 46, 46) 4%, transparent 70%);
+    mask-image: radial-gradient(rgb(43, 42, 42) 4%, transparent 70%);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 7%;
-    background: linear-gradient(to right, black, black, black, black, rgba(109, 12, 255, 0.237), rgba(137, 43, 226, 0.301), rgba(0, 0, 255, 0.196));
+    background: linear-gradient(to right,blueviolet, rgb(109, 12, 255), rgb(137, 43, 226), rgb(0, 0, 255));
 }
 .ball-up {
     display: flex;
@@ -131,7 +134,7 @@ body {
     text-align: center;
     color: white;
 }
-.back-g-ball button {
+.nothing {
     margin-top: 10px;
     width: 8%;
     font-size: 14px;
@@ -139,10 +142,11 @@ body {
     height: 36px;
     border-radius: 20px;
     border: none;
-    background: linear-gradient(135deg, rgba(46, 46, 244, 0.308), rgba(137, 43, 226, 0.308));
+    background: linear-gradient(135deg, rgb(50, 50, 50), rgb(188, 117, 255));
+    filter: contrast(400%);
 }
-.back-g-ball button:hover {
-    background: linear-gradient(135deg, rgba(46, 46, 244, 0.598), rgba(137, 43, 226, 0.589));  
+.nothing:hover {
+    background: linear-gradient(135deg, rgb(22, 22, 255), rgb(145, 28, 255));  
 }
 /* ================= side2 ================= */
 .side2 {
@@ -159,13 +163,14 @@ body {
     height: 300px;
     margin: 30px;
     border-radius: 18px;
-    background: linear-gradient(180deg, rgb(152, 152, 152), blueviolet);
+    background: linear-gradient(90deg, rgb(116, 30, 255), rgb(23, 155, 255));
+    filter: contrast(100%);
     box-shadow: 2px 2px 10px rgb(66, 66, 66);
     transition: all 2s;
 }
 .mio:hover {
     margin-top: -7px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.884), rgba(137, 43, 226, 0.726));
+    background: linear-gradient(90deg, rgb(106, 13, 255), rgb(11, 149, 255));
     height: 320px;
 }
 .mio-aleman {
@@ -219,6 +224,9 @@ h4 {
     padding: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.hamb {
+    display: none;
+}
 @media (max-width: 765px) {
     .nav {
         top: 0;
@@ -260,13 +268,17 @@ h4 {
     .ball-up p {
         font-size: medium;
     }
-    .back-g-ball button {
-        margin-top: 4%;
+    .nothing {
         width: 24%;
     }
     .Contact {
         margin: 3.7px 1% auto auto;
         width: 25%;
         height: 85%;
+    }
+    .hamb {
+        margin-top: 1%;
+        height: 80%;
+        display: block;
     }
 }
