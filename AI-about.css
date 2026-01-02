@@ -2,7 +2,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(8, 4, 10);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:
+    'Lucida Sans', 
+    'Lucida Sans Regular',
+    'Lucida Grande', 
+    'Lucida Sans Unicode', 
+    Geneva, 
+    Verdana,
+    sans-serif;
 }
 
 /* ================= navbar ================= */
@@ -40,36 +47,54 @@ body {
     border-radius: 100%;
 }
 .mader3div {
-    width: 40%;
+    width: 43%;
     margin-left: 12.5%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .mader3div h3 {
-    font-family: 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 
+    'Arial Narrow', 
+    Arial, 
+    sans-serif;
     padding: 10px;
     border-radius: 14px;
-    font-size: 14px;
+    color: rgb(44, 44, 44);
+    font-size: 15px;
     transition: all 2s;
 }
 .mader3div h3:hover {
-    background: linear-gradient(135deg, rgba(46, 46, 244, 0.267), rgba(137, 43, 226, 0.285));
+    background: linear-gradient(135deg,
+     rgba(46, 46, 244, 0.669),
+     rgba(137, 43, 226, 0.573));
+    margin-right: 8px;
 }
 .div-center {
     padding: 4px 10px;
     margin: 4px;
 }
 .Contact {
-    margin: 1.3px 1.2px 3px 19%;
+    margin: 1.3px 1.2px 3px 15%;
     width: 15%; 
     justify-content: center;
     color: aliceblue;
     height: 95%;
     font-size: 16px;
     border-radius: 13px;
-    background: linear-gradient(135deg, rgba(31, 31, 252, 0.92), rgb(143, 35, 244));
+    background: linear-gradient(135deg,
+    rgba(31, 31, 252, 0.92),
+    rgb(143, 35, 244));
     border: none;
+}
+.Contact:hover {
+    background: linear-gradient(135deg, 
+    rgba(0, 0, 255, 0.984), 
+    rgb(136, 9, 255));  
+    filter: contrast(300%);
 }
 /* ================= main ================= */
 .ball {
@@ -91,7 +116,10 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 7%;
-    background: linear-gradient(to right,blueviolet, rgb(109, 12, 255), rgb(137, 43, 226), rgb(0, 0, 255));
+    background: linear-gradient(to right,
+    blueviolet, rgb(109, 12, 255),
+    rgb(137, 43, 226), 
+    rgb(0, 0, 255));
 }
 .ball-up {
     display: flex;
@@ -101,18 +129,21 @@ body {
     flex-direction: column;
     width: 420px;
     height: 420px;
-    background: rgb(15, 0, 34);
+    background: rgb(26, 0, 59);
     box-shadow: inset 6px 3px 10px rgb(194, 155, 232);
     border-radius: 100%;
     transition: all 1.3s;
-    animation: show forwards 4s;
+    animation: key infinite 3s;
 }
-@keyframes show {
+@keyframes key {
     0% {
         transform: rotateZ(0deg);
     }
+    50% {
+        transform: rotateZ(45deg);
+    }
     100% {
-        transform: rotateZ(360deg);
+        transform: rotateZ(0);
     }
 }
 .ball-up:hover {
@@ -121,7 +152,10 @@ body {
 .ball p {
     width: 80%;
     font-size: larger;
-    background: linear-gradient(90deg, red, rgb(164, 60, 255), rgb(255, 128, 0));
+    background: linear-gradient(90deg,
+    red, 
+    rgb(164, 60, 255), 
+    rgb(255, 128, 0));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -132,6 +166,10 @@ body {
 .ball-up h1 {
     width: 90%;
     text-align: center;
+    font-family:'Franklin Gothic Medium', 
+    'Arial Narrow', 
+    Arial, 
+    sans-serif;
     color: white;
 }
 .nothing {
@@ -141,12 +179,16 @@ body {
     color: white;
     height: 36px;
     border-radius: 20px;
-    border: none;
-    background: linear-gradient(135deg, rgb(50, 50, 50), rgb(188, 117, 255));
+    border: 1px solid white;
+    background: linear-gradient(135deg, 
+    rgb(65, 64, 64), 
+    rgb(188, 117, 255));
     filter: contrast(400%);
+    transition: all 1s;
 }
 .nothing:hover {
-    background: linear-gradient(135deg, rgb(22, 22, 255), rgb(145, 28, 255));  
+    border: 1px solid rgba(255, 255, 255, 0.413);
+    filter: contrast(2200%);
 }
 /* ================= side2 ================= */
 .side2 {
@@ -158,52 +200,136 @@ body {
 .side2 h1 {
     color: white;
 }
-.mio {
-    width: 18%;
-    height: 300px;
-    margin: 30px;
-    border-radius: 18px;
-    background: linear-gradient(90deg, rgb(116, 30, 255), rgb(23, 155, 255));
+.card {
+    width: 22%; /* 18%*/
+    height: 470px; /* 300px*/
+    margin: 40px 33px;
+    border-radius: 20px; /* 15px*/
     filter: contrast(100%);
-    box-shadow: 2px 2px 10px rgb(66, 66, 66);
-    transition: all 2s;
+    box-shadow: -6px 0px 12px rgba(255, 255, 255, 0.04),
+    0 12px 30px rgba(0, 0, 0, 0.7),
+    0 0 0 rgba(0,0,0,0);
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    transition:
+    transform 1.2s cubic-bezier(0.21, 1, 0.36, 1),
+    box-shadow 1.2s cubic-bezier(0.21, 1, 0.36, 1);
+    transform-origin: right center;
 }
-.mio:hover {
-    margin-top: -7px;
-    background: linear-gradient(90deg, rgb(106, 13, 255), rgb(11, 149, 255));
-    height: 320px;
+h3 img {
+    width: 23px;
+    height: 23px;
 }
-.mio-aleman {
+.card::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg,
+    rgb(102, 0, 255),
+    rgb(62, 213, 255));
+    height: 150%;
+    animation: show 5s linear infinite;
+    transition: all 0.2s linear;
+}
+@keyframes show {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: rgb(245, 245, 245);
+    border-radius: 15px;
+}
+.card:hover {
+    transform: rotateY(22deg)translateZ(-25px);
+    box-shadow: -12px 0px 25px rgba(255, 255, 255, 0.902),
+    0 35px 70px rgba(0, 0, 0, 0.85),
+    0 0 35px rgba(0,0,0,0.9);
+}
+.card-aleman {
+    z-index: 999;
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     justify-content: center;
 }
-.photo {
-    margin-top: 5%;
-    width: 70px;
-    height: 70px;
+.card h1 {
+    font-size: 30px;
+    background: linear-gradient(90deg,  
+    rgb(0, 0, 0),
+    rgb(49, 4, 4), 
+    rgb(255, 14, 14));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.card h5 {
+    margin-top: -4%;
+    color: rgb(5, 5, 5);
+}
+.card-img {
+    z-index: 999;
+    width: 220px;
+    height: 200px;
     background: black;
-    border-radius: 100%;
+    border-radius: 4%;
 }
-.butt-detels {
+.card-img-center {
+    width: 200px;
+    height: 150px;
+    border-radius: 14px;
+}
+.buttons {
+    z-index: 999;
     display: flex;
-    margin-top: 30%;
+    margin-top: 10%;
 }
-.mio button {
-    background-color: rgb(211, 187, 233);
-    width: 100px;
-    margin: 4px;
+
+.butfalo {
+    z-index: 999;
+    width: 140px;
+    margin: 4px 14px 0 0;
     font-size: large;
     border-radius: 15px;
-    height: 35px;
+    height: 40px;
     border: none;
+    transition: all 0.5s linear
 }
-.mio button:hover {
-    background: linear-gradient(135deg, rgba(31, 31, 252, 0.92), rgb(143, 35, 244));
+.butfalo:hover {
+    background: rgba(144, 25, 255, 0.74);
+    filter: contrast(200%);
+    border: 1px solid white;
+    color: white;
 }
-.last-div {
+.butdet {
+    z-index: 999;
+    width: 100px;
+    padding: 4px 8px;
+    margin: 4px;
+    font-size: large;
+    border-radius: 14px;
+    background: rgb(102, 28, 171);
+    height: 40px;
+    color: white;
+    border: none;
+    transition: all 0.5s linear  
+}
+.butdet:hover {
+    background: rgba(173, 120, 214, 0.74);
+    filter: contrast(200%);
+    border: 1px solid white;
+    color: rgb(0, 0, 0);
+}
+.cards {
     margin-top: 4%;
     width: 100%;
     display: flex;
@@ -222,63 +348,65 @@ h4 {
     width: 50%;
     font-size: large;
     padding: 20px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Trebuchet MS',
+    'Lucida Sans Unicode', 
+    'Lucida Grande', 
+    'Lucida Sans', 
+    Arial, 
+    sans-serif;
 }
 .hamb {
     display: none;
 }
+
+/* ================= responsive ================= */
+
 @media (max-width: 765px) {
     .nav {
         top: 0;
         border-radius: 0;
         width: 100%;
-    }
-    .logo-text {
+    }.logo-text {
         width: 2%;
+        margin-left: -40px;
         font-size: 15px;
-    }
-    .mader3div {
+    }.mader3div {
         display: none;
-    }
-    .logo-img {
+    }.logo-img {
         margin-left: -20px;
         width: 29px;
         height: 29px;
-    }
-    .mader3div h3 {
+        display: none;
+    }.mader3div h3 {
         padding: 4px;
-    }
-    .ball {
-        width: 320px;
-        height: 320px;
-    }
-    .ball-up {
-        width: 320px;
-        height: 320px;
-    }
-    .last-div {
+    }.ball {
+        width: 280px;
+        height: 280px;
+    }.ball-up {
+        width: 280px;
+        height: 280px;
+    }.cards {
         flex-direction: column;
     }
-    .mio {
-        width: 58%;
-    }
-    .ball-up h1 {
+    .card {
+        width: 74%;
+    }.card:hover {
+        margin-top: -3px;
+    }.card-aleman h1 {
+        font-size: 28px;
+    }.ball-up h1 {
         font-size: x-large;
-    }
-    .ball-up p {
+    }.ball-up p {
         font-size: medium;
-    }
-    .nothing {
+    }.nothing {
         width: 24%;
-    }
-    .Contact {
+    }.Contact {
         margin: 3.7px 1% auto auto;
         width: 25%;
         height: 85%;
-    }
-    .hamb {
-        margin-top: 1%;
-        height: 80%;
+    }.hamb {
+        margin-top: 1.9%;
+        height: 70%;
         display: block;
     }
 }
