@@ -7,17 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  
 <input type="checkbox" id="auth-toggle">
 
 <header class="navbar-anim">
 <div class="navbar">
   <div class="logo">AI-SLF</div>
-
-  <nav>
-    <label for="auth-toggle" class="btn primary" id="btn-nav-sign">Sign up</label>
-    <button class="btn ghost"><a href="AI-about.html" class="text-nav">about</a></button>
-    <button class="btn ghost"><a href="#" class="text-nav">Contact</a></button>
+    <nav>
+        <label for="auth-toggle" class="btn primary" id="btn-nav-sign">Sign up</label>
+        <button class="btn ghost"><a href="AI-about.html" class="text-nav">about</a></button>
+    <button class="btn ghost"><a href="contact.html" class="text-nav">Contact</a></button>
   </nav>
 </div>
 </header>
@@ -32,22 +31,22 @@
     </div>
 
     <div class="hero-image">
-      <img src="OIP.webp">
+      <img src="1387imges/OIP (1).webp">
         <button class="btn primary big">Get Started</button>
-    </div>
+      </div>
     </section>
 
   <!-- Collaboration -->
   <section class="collab">
     <span>AI</span>
-    <span>+</span>
+      <span>+</span>
     <span>Human</span>
   </section>
 
   <!-- Info -->
   <section class="info">
     <p>the future becomes more beautiful with artificial intelligece...</p>
-    <img src="photo_2025-12-03_07-29-40.jpg">
+    <img src="1387imges/photo_2025-12-03_07-29-40.jpg">
   </section>
 
   <!-- Features -->
@@ -70,7 +69,7 @@
     <label for="auth-toggle" class="close">✕</label>
     <!--form1-->
       <div id="verify-sign-in">
-                      <img src="download.webp" class="img-ver">
+                      <img src="1387imges/download.webp" class="img-ver">
           <div class="Sign-in-123">
                       <input type="email" 
                            placeholder="email" class="in-put">
@@ -91,19 +90,21 @@
     <!-- form2 -->
     <div id="form-ver">
 
-        <img src="download.webp" alt="verify" class="img-ver">
+        <img src="1387imges/download.webp" alt="verify" class="img-ver">
 
      <div class="auth-body">
         <h2>verify your accont</h2>
         <p>please enter your email and password to continue</p>
 
         <input type="email" 
-    placeholder="email" class="in-put">
+    placeholder="email" class="in-put" id="input1">
+              <p id="error1"></p>
+              <p id="errorinput"></p>
         <input type="password"
-    placeholder="password" class="in-put">
-        <button class="btn-ver">verify & continue</button>
-
-        <span class="auth-footer">
+    placeholder="password" class="in-put" id="input2">
+              <p id="error2"></p>
+        <button class="btn-ver" id="submitBtn">verify & continue</button>
+        <span class="auth-footer2">
             <h5 class="text-ver">you never sign up?</h5>
             <a href="#" id="verify-onk">sine up</a>
         </span>
@@ -118,7 +119,7 @@
         <input type="text" placeholder="feedback" class="input-text">
           <div class="input-and-btn">
             <input type="email" placeholder="email" class="email-input">
-          <button class="send-btn">SEND</button>
+          <button class="send-btn" id="buttsend">SEND</button>
         </div>
     <p class="feed-b-text">thank you for your comments and criticism.With your help, we can achieve greet things.</p>
 </div>
@@ -127,4 +128,5 @@
 </div>
 </body>
 </html>
+
 
